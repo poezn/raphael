@@ -17,14 +17,8 @@ var setup = {
             fakeDefine: "fakedefine.js"
         },
         output: {
-            "raphael-min.js": function () {
-                return this.copy + "\n" + minify(this.fakeDefine + "\n\n" + this.eve + this.core + this.svg + this.vml);
-            },
             "raphael.js": function () {
                 return this.copy + "\n" + this.fakeDefine + "\n\n" + this.eve + "\n\n" + this.core + "\n\n" + this.svg + "\n\n" + this.vml;
-            },
-            "raphael.pro-min.js": function () {
-                return this.copy + "\n" + minify(this.fakeDefine + "\n\n" + this.eve + this.core + this.svg);
             },
             "raphael.pro.js": function () {
                 return this.copy + "\n" + this.fakeDefine + "\n\n" + this.eve + "\n\n" + this.core + "\n\n" + this.svg ;

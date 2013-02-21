@@ -1,0 +1,21 @@
+{
+  "name": "eve",
+  "author": {
+    "name": "Dmitry Baranovskiy",
+    "email": "dmitry@baranovskiy.com",
+    "url": "http://dmitry.baranovskiy.com"
+  },
+  "description": "Simple custom events",
+  "version": "0.3.5",
+  "main": "./eve.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DmitryBaranovskiy/eve.git"
+  },
+  "readme": "# Eve\n\nTiny event helping JavaScript library.\n\nMIT Licence\n\nFor use case look at e.html\n",
+  "_id": "eve@0.3.5",
+  "dist": {
+    "shasum": "37a5e8a1f7e30b2d796f5ebb6e50c48aa9cd751c"
+  },
+  "_from": "eve"
+}

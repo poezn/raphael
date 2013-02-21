@@ -1,54 +1,32 @@
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 #dr-js {
-    background: #999;
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
 }
 #src-dr-js {
-    background: #000;
     margin: 1em;
     padding: 0;
 }
 .dr-doc {
-    background: #eee;
-    border-right: solid #eee 3px;
-    float: right;
     font: 300 16px/1.4 "Myriad Pro", "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
-    height: 100%;
     margin: 0;
-    overflow: auto;
-    padding: 0 30px;
-    width: 800px;
+    padding: 0 30px 10px;
 }
 .dr-toc {
+    font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+    list-style: none;
     margin: 0;
     padding: 0 16px;
-    background: #ddd;
-    list-style: none;
-    font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
-    overflow: auto;
-    border-right: solid #ddd 3px;
-    height: 100%;
-    float: right;
-    width: 240px;
+	float: right;
+}
+.dr-toc input {
+	display: none;
 }
 #dr {
     margin: 0 auto;
-    width: 1152px;
-    height: 100%;
-}
-::-moz-selection {
-    background: #c00;
-    color: #fff;
-}
-::selection {
-    background: #c00;
-    color: #fff;
 }
 .dr-doc code,
 .dr-type em,
@@ -56,24 +34,28 @@ html, body {
 .dr-property em {
     font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
 }
+.extra {
+    display: none;
+}
 pre.code code {
-    color: #fff;
+    color: #000;
 }
 pre.code {
-    background: #333;
-    color: #fff;
+    background: #eee;
+	border: solid 1px #ccc;
+    color: #000;
     overflow-x: auto;
     padding: 16px 30px;
     margin: 0 -30px;
 }
 code b {
-    color: #e9df8f;
+    color: #e98553;
     font-weight: normal;
 }
 code i,
 code i *,
 code i .d {
-    color: #8b9967;
+    color: #5c993f;
     font-style: normal;
 }
 code .s {
@@ -107,7 +89,7 @@ dd.dr-type {
 dd.dr-description {
     display: table;
     min-height: 24px;
-    border: solid 1px #eee;
+    border: solid 1px #fff;
 }
 .dr-type {
     float: left;
@@ -224,15 +206,7 @@ h5.dr-property {
     color: #009;
 }
 i.dr-trixie {
-    border: solid 10px #eee;
-    border-left-color: #999;
-    height: 0;
-    margin-left: -30px;
-    margin-top: -10px;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    width: 0;
+	display: none;
 }
 p.header {
     font-size: 19px;
